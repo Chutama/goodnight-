@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Good Night!</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #fff0f5;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .scroll-text {
+      font-size: 2.5rem;
+      color: #ff69b4;
+      white-space: nowrap;
+      animation: scrollText 10s linear infinite;
+      margin-bottom: 1rem;
+    }
+
+    .troll-message {
+      font-size: 1.2rem;
+      color: #888;
+      background: #ffe4f0;
+      padding: 0.5rem 1rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 5px rgba(255, 105, 180, 0.3);
+    }
+
+    @keyframes scrollText {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="scroll-text">💖 Good night kub >3 💖</div>
+  <div class="troll-message">📞 นี่แก๊งคอลเซ็นเตอร์ส่งมา 💘</div>
+</body>
+</html>
