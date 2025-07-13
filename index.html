@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Good Night!</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #fff0f5;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      text-align: center;
+      position: relative;
+    }
+
+    .scroll-text {
+      font-size: 2.5rem;
+      color: #ff69b4;
+      white-space: nowrap;
+      animation: scrollText 10s linear infinite;
+      margin-bottom: 1rem;
+    }
+
+    .troll-message {
+      font-size: 1.2rem;
+      color: #888;
+      background: #ffe4f0;
+      padding: 0.5rem 1rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 5px rgba(255, 105, 180, 0.3);
+      margin: 0.5rem 0;
+    }
+
+    @keyframes scrollText {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    /* 🌸 ดอกไม้ลอยๆ */
+    .flower {
+      position: absolute;
+      font-size: 2rem;
+      animation: floatFlower 8s linear infinite;
+      opacity: 0.7;
+    }
+
+    @keyframes floatFlower {
+      0% {
+        transform: translateY(-10%) rotate(0deg);
+        opacity: 0;
+      }
+      10% {
+        opacity: 0.9;
+      }
+      100% {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="scroll-text">💖 Good night kub >3 💖</div>
+  <div class="troll-message">📞 นี่แก๊งคอลเซ็นเตอร์ส่งมา 💘</div>
+  <div class="scroll-text">อยากเป็นเจ๊หงส์!</div>
+  <div class="troll-message">บอกว่าฝันดีเจอแอ๊นท์</div>
+
+  <!-- 🌸 ดอกไม้ลอย -->
+  <div class="flower" style="left: 10%;">🌸</div>
+  <div class="flower" style="left: 30%;">🌼</div>
+  <div class="flower" style="left: 50%;">🌷</div>
+  <div class="flower" style="left: 70%;">💐</div>
+  <div class="flower" style="left: 85%;">🌺</div>
+</body>
+</html>
